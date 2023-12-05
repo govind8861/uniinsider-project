@@ -1,0 +1,177 @@
+/* Base styles for the footer */
+.app-footer {
+  background-color: #0f172a;
+  color: white;
+  padding: 20px;
+  width: 100%;
+  /* position:fixed; */
+  bottom: 0;
+}
+@media (min-height:1980px) {
+  .app-footer{
+    position: fixed;
+    bottom: 0;
+  }
+  
+}
+/* Logo */
+.footer-logo img {
+  max-width: 100px;
+}
+
+/* Navigation links */
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 8px;
+  /* display: flex; */
+  flex-wrap: wrap;
+}
+
+.footer-links li {
+  margin: 8px;
+  margin-right: 20px;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #FF5722;
+}
+
+/* Contact section */
+.footer-contact {
+  text-align: right;
+}
+
+.footer-contact p {
+  margin: 5px 0;
+}
+
+/* Copyright notice */
+.footer-copyright {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.footer-copyright a {
+  color: #FF5722;
+  text-decoration: none;
+}
+
+.footer-copyright a:hover {
+  text-decoration: underline;
+}
+
+/* Additional text styling */
+.textSpace {
+  letter-spacing: 1px;
+  line-height: 1.5;
+  font-weight: 500;
+  font-style: italic;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  /* Adjust footer height for smaller screens */
+  .app-footer {
+    height: auto;
+    min-height: 300px;
+  }
+
+  /* Center-align navigation links on smaller screens */
+  .footer-links ul {
+    justify-content: center;
+  }
+}
+@media (min-width:0px) and (max-width:300px) {
+  .hero h1{
+    font-size:larger;
+  }
+  
+}
+
+@media (max-width: 576px)  {
+  /* Adjust padding for smaller screens */
+  .app-footer {
+    padding: 15px;
+  }
+  .textSpace{
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  /* Center-align contact section on smaller screens */
+  .footer-contact {
+    text-align: center;
+  }
+
+  /* Center-align copyright notice on smaller screens */
+  .footer-copyright {
+    text-align: center;
+  }
+  .footer-links{
+    
+    margin-top: 5px;
+  }
+}
+/* ... Your other styles ... */
+
+/* Additional styles for the social icons */
+.foot ul {
+  display: flex;
+  justify-content: center; /* Center-align the icons horizontally */
+  padding: 0;
+  list-style: none;
+  margin: 8px;
+}
+
+.foot ul li {
+  margin: 0 10px; /* Add margin between the icons */
+}
+
+.foot ul li:last-child {
+  margin-right: 0; /* Remove right margin from the last icon */
+}
+
+/* Remove underline from list items' text */
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #FF5722;
+  text-decoration: none;
+}
+/* ... Your other styles ... */
+
+/* Media query for adding <hr> tag */
+@media (max-width: 545px) {
+  /* Add margin before and after <hr> for spacing */
+  .app-footer hr {
+    margin: 20px 0;
+    display: block; /* Display the <hr> tag only in this media query */
+  }
+}
+@media (min-width: 545px ) and( max-width:780px) {
+  /* Add margin before and after <hr> for spacing */
+  .app-footer hr {
+    margin: 20px 0;
+   
+    display: block; /* Display the <hr> tag only in this media query */
+  }
+  
+}
+
+/* Hide <hr> tag for larger screens */
+@media (min-width: 789px) {
+  .app-footer hr {
+    display: none;
+  }
+}
