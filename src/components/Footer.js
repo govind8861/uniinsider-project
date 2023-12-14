@@ -15,17 +15,18 @@ const Footer = () => {
 				<div className="row">
 					<div className="footer-logo col-md-5">
 						<Link to='/' style={{textDecoration:'none',color:'white'}} onClick={scrollToTop}>
-						<img src="/assets/GymLogo.jpg" alt="App Logo" className="ms-1" />
+						<img
+					src="https://cdn-icons-png.flaticon.com/512/7870/7870706.png"
+					style={{ height: '50px', width: '50px', borderRadius: '5px' }}
+					alt=" &#8634;"
+					onClick={() => window.scrollTo(0, 0)}
+				></img>
+			
 						<span className="ms-3 h4 " style={{ fontWeight: 'bold' }}>
-							Fit Guard
+							Placement Chatbot
 						</span>
 						</Link>
-						<span className="d-block mt-4 textSpace">
-							"Stay ahead in your fitness game with FitGuard
-							<br /> – your ultimate companion for injury insights
-							<br /> and tailored workout recommendations."
-						</span>
-					</div>
+						</div>
 					<hr/>
 					<div className="footer-links col-md ">
 						<h3>The Company</h3>
@@ -39,11 +40,6 @@ const Footer = () => {
 								{' '}
 								<i className="fa fa-chevron-right"></i>&nbsp;
 								<Link to="/about" onClick={scrollToTop}>About</Link>
-							</li>
-							<li>
-								{' '}
-								<i className="fa fa-chevron-right"></i>&nbsp;
-								<Link to="/medical" >Medical</Link>
 							</li>
 							<li>
 								{' '}

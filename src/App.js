@@ -38,7 +38,7 @@ function FooterWithConditionalRendering() {
 	const location = useLocation()
 
 	// Exclude the Footer component from rendering on the MedicalDisclosure page
-	if (location.pathname === '/medical') {
+	if (location.pathname === '/') {
 		return null
 	}
 
